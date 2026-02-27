@@ -1,0 +1,58 @@
+{
+  "best_model": "Gradient Boosting",
+  "metrics": {
+    "r2": 0.9922,
+    "mae": 0.8411,
+    "rmse": 1.4585,
+    "mape": 5.45,
+    "cv_r2_mean": 0.9911,
+    "cv_r2_std": 0.0006
+  },
+  "all_results": {
+    "Linear Regression": {
+      "r2": 0.9255,
+      "mae": 2.9167,
+      "rmse": 4.502,
+      "mape": 47.91,
+      "cv_r2_mean": 0.9202,
+      "cv_r2_std": 0.0062
+    },
+    "Random Forest": {
+      "r2": 0.9905,
+      "mae": 0.955,
+      "rmse": 1.6077,
+      "mape": 6.24,
+      "cv_r2_mean": 0.9894,
+      "cv_r2_std": 0.0007
+    },
+    "Gradient Boosting": {
+      "r2": 0.9922,
+      "mae": 0.8411,
+      "rmse": 1.4585,
+      "mape": 5.45,
+      "cv_r2_mean": 0.9911,
+      "cv_r2_std": 0.0006
+    }
+  },
+  "features": {
+    "numerical": [
+      "engine_size_l",
+      "cylinders",
+      "distance_km",
+      "duration_minutes",
+      "avg_speed_kmh",
+      "max_speed_kmh",
+      "idle_time_minutes",
+      "load_weight_kg",
+      "speed_variance",
+      "idle_ratio",
+      "distance_per_hour"
+    ],
+    "categorical": [
+      "fuel_type",
+      "route_type"
+    ]
+  },
+  "training_samples": 8000,
+  "test_samples": 2000
+}
